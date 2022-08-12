@@ -44,20 +44,3 @@ pub enum FTEvent {
     Balance(u128),
 }
 
-#[derive(Debug, Encode, Decode, TypeInfo)]
-pub enum State {
-    Name,
-    Symbol,
-    Decimals,
-    TotalSupply,
-    BalanceOf(ActorId),
-}
-
-#[derive(Debug, Encode, Decode, TypeInfo)]
-pub enum StateReply {
-    Name(String),
-    Symbol(String),
-    Decimals(u8),
-    TotalSupply(u128),
-    Balance(u128),
-}

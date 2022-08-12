@@ -4,7 +4,7 @@
 mod tests;
 
 use ft_io::*;
-use gstd::{exec, msg, debug,prelude::*, ActorId};
+use gstd::{debug, exec, msg, prelude::*, ActorId};
 
 const ZERO_ID: ActorId = ActorId::new([0u8; 32]);
 

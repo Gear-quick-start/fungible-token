@@ -43,4 +43,3 @@ pub enum FTEvent {
     TotalSupply(u128),
     Balance(u128),
 }
-

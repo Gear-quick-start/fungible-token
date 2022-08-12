@@ -3,7 +3,6 @@ use ft_io::*;
 use gstd::String;
 use gtest::{Program, System};
 const USERS: &[u64] = &[3, 4, 5];
-use crate::{StateReply, State};
 
 fn init_with_mint(sys: &System) {
     sys.init_logger();

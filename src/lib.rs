@@ -183,7 +183,7 @@ extern "C" fn init() {
         name: config.name,
         symbol: config.symbol,
         decimals: config.decimals,
-        ..FungibleToken::default()
+        ..Default::default()
     };
     unsafe { FUNGIBLE_TOKEN = Some(ft) };
 }

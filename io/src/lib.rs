@@ -5,6 +5,8 @@ use gstd::{prelude::*, ActorId};
 use scale_info::TypeInfo;
 
 #[derive(Debug, Decode, Encode, TypeInfo)]
+#[codec(crate = gstd::codec)]
+#[scale_info(crate = gstd::scale_info)]
 pub struct InitConfig {
     pub name: String,
     pub symbol: String,
@@ -12,6 +14,8 @@ pub struct InitConfig {
 }
 
 #[derive(Debug, Decode, Encode, TypeInfo)]
+#[codec(crate = gstd::codec)]
+#[scale_info(crate = gstd::scale_info)]
 pub enum FTAction {
     Mint(u128),
     Burn(u128),
@@ -29,6 +33,8 @@ pub enum FTAction {
 }
 
 #[derive(Debug, Encode, Decode, TypeInfo)]
+#[codec(crate = gstd::codec)]
+#[scale_info(crate = gstd::scale_info)]
 pub enum FTEvent {
     Transfer {
         from: ActorId,

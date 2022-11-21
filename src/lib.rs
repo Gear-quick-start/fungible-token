@@ -195,7 +195,7 @@ extern "C" fn meta_state() -> *mut [i32; 2] {
     debug!("{:?}", query);
     let encoded = match query {
         State::Name => StateReply::Name(ft.name.clone()),
-        State::Symbol => StateReply::Name(ft.symbol.clone()),
+        State::Symbol => StateReply::Symbol(ft.symbol.clone()),
         State::Decimals => StateReply::Decimals(ft.decimals),
         State::TotalSupply => StateReply::TotalSupply(ft.total_supply),
         State::BalanceOf(account) => {

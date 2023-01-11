@@ -3,4 +3,8 @@
 #[cfg(test)]
 mod tests;
 
-pub mod contract;
+#[cfg(not(feature = "binary-vendor"))]
+mod contract;
+
+#[cfg(feature = "binary-vendor")]
+include!(concat!(env!("OUT_DIR"), "/wasm_binary.rs"));

@@ -108,9 +108,9 @@ checksum = "14c189c53d098945499cdfa7ecc63567cf3886b3332b312a5b4585d8d3a6a610"
 
 [[package]]
 name = "camino"
-version = "1.1.1"
+version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "88ad0e1e3e88dd237a156ab9f571021b8a158caa0ae44b1968a241efb5144c1e"
+checksum = "c77df041dc383319cc661b428b6961a005db4d6808d5e12536931b1ca9556055"
 dependencies = [
  "serde",
 ]
@@ -241,6 +241,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "ft-state"
+version = "0.1.0"
+dependencies = [
+ "ft-io",
+ "gear-wasm-builder 0.1.2 (git+https://github.com/gear-tech/gear)",
+ "gmeta",
+ "gstd",
+]
+
+[[package]]
 name = "fungible-token"
 version = "0.1.3"
 dependencies = [
@@ -322,7 +332,7 @@ dependencies = [
 [[package]]
 name = "galloc"
 version = "0.1.0"
-source = "git+https://github.com/gear-tech/gear#af690a6eea0f5c3b87091b5a2122d290d9667096"
+source = "git+https://github.com/gear-tech/gear#ae09f618aa7db71643b56cfbadc7746e16ca1e6e"
 dependencies = [
  "dlmalloc",
 ]
@@ -330,7 +340,7 @@ dependencies = [
 [[package]]
 name = "gcore"
 version = "0.1.0"
-source = "git+https://github.com/gear-tech/gear#af690a6eea0f5c3b87091b5a2122d290d9667096"
+source = "git+https://github.com/gear-tech/gear#ae09f618aa7db71643b56cfbadc7746e16ca1e6e"
 dependencies = [
  "gear-core-errors 0.1.0 (git+https://github.com/gear-tech/gear)",
  "gsys 0.1.0 (git+https://github.com/gear-tech/gear)",
@@ -398,7 +408,7 @@ dependencies = [
 [[package]]
 name = "gear-core-errors"
 version = "0.1.0"
-source = "git+https://github.com/gear-tech/gear#af690a6eea0f5c3b87091b5a2122d290d9667096"
+source = "git+https://github.com/gear-tech/gear#ae09f618aa7db71643b56cfbadc7746e16ca1e6e"
 dependencies = [
  "derive_more",
  "parity-scale-codec",
@@ -438,7 +448,7 @@ dependencies = [
 [[package]]
 name = "gear-wasm-builder"
 version = "0.1.2"
-source = "git+https://github.com/gear-tech/gear#af690a6eea0f5c3b87091b5a2122d290d9667096"
+source = "git+https://github.com/gear-tech/gear#ae09f618aa7db71643b56cfbadc7746e16ca1e6e"
 dependencies = [
  "anyhow",
  "cargo_metadata",
@@ -474,7 +484,7 @@ dependencies = [
 [[package]]
 name = "gmeta"
 version = "0.1.0"
-source = "git+https://github.com/gear-tech/gear#af690a6eea0f5c3b87091b5a2122d290d9667096"
+source = "git+https://github.com/gear-tech/gear#ae09f618aa7db71643b56cfbadc7746e16ca1e6e"
 dependencies = [
  "blake2-rfc",
  "gmeta-codegen",
@@ -486,7 +496,7 @@ dependencies = [
 [[package]]
 name = "gmeta-codegen"
 version = "0.1.0"
-source = "git+https://github.com/gear-tech/gear#af690a6eea0f5c3b87091b5a2122d290d9667096"
+source = "git+https://github.com/gear-tech/gear#ae09f618aa7db71643b56cfbadc7746e16ca1e6e"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -496,7 +506,7 @@ dependencies = [
 [[package]]
 name = "gstd"
 version = "0.1.0"
-source = "git+https://github.com/gear-tech/gear#af690a6eea0f5c3b87091b5a2122d290d9667096"
+source = "git+https://github.com/gear-tech/gear#ae09f618aa7db71643b56cfbadc7746e16ca1e6e"
 dependencies = [
  "bs58",
  "futures",
@@ -504,6 +514,7 @@ dependencies = [
  "gcore",
  "gear-core-errors 0.1.0 (git+https://github.com/gear-tech/gear)",
  "gstd-codegen",
+ "hashbrown",
  "hex",
  "parity-scale-codec",
  "primitive-types",
@@ -514,7 +525,7 @@ dependencies = [
 [[package]]
 name = "gstd-codegen"
 version = "0.1.0"
-source = "git+https://github.com/gear-tech/gear#af690a6eea0f5c3b87091b5a2122d290d9667096"
+source = "git+https://github.com/gear-tech/gear#ae09f618aa7db71643b56cfbadc7746e16ca1e6e"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -529,7 +540,7 @@ source = "git+https://github.com/gear-tech/gear.git?branch=stable#ec8de75d6001cd
 [[package]]
 name = "gsys"
 version = "0.1.0"
-source = "git+https://github.com/gear-tech/gear#af690a6eea0f5c3b87091b5a2122d290d9667096"
+source = "git+https://github.com/gear-tech/gear#ae09f618aa7db71643b56cfbadc7746e16ca1e6e"
 
 [[package]]
 name = "gtest"
@@ -894,9 +905,9 @@ dependencies = [
 
 [[package]]
 name = "regex"
-version = "1.7.0"
+version = "1.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e076559ef8e241f2ae3479e36f97bd5741c0330689e217ad51ce2c76808b868a"
+checksum = "48aaa5748ba571fb95cd2c85c09f629215d3a6ece942baa100950af03a34f733"
 dependencies = [
  "aho-corasick",
  "memchr",

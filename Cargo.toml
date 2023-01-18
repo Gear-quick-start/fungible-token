@@ -9,7 +9,7 @@ authors = ["Gear Technologies"]
 gstd = { git = "https://github.com/gear-tech/gear.git" }
 ft-io = { path = "io" }
 hashbrown = "0.13.1"
-gmeta = { git = "https://github.com/gear-tech/gear", features = ["codegen"] }
+gmeta = { git = "https://github.com/gear-tech/gear" }
 
 [dev-dependencies]
 gstd = { git = "https://github.com/gear-tech/gear.git", features = ["debug"] }

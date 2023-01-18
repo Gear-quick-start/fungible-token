@@ -7,4 +7,4 @@ authors = ["Gear Technologies"]
 
 [dependencies]
 gstd = { git = "https://github.com/gear-tech/gear.git" }
-gmeta = { git = "https://github.com/gear-tech/gear", features = ["codegen"] }
+gmeta = { git = "https://github.com/gear-tech/gear" }
